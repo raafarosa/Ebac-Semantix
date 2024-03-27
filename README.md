@@ -9,8 +9,7 @@
 
 #### **Descrição:**
 Projeto de analise de dados relacionado ao desmatamento da amazônia.
-
-## Link para a aplicação:
+___
 
 ### Aplication
 
