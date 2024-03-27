@@ -1,4 +1,4 @@
-[![](https://raw.githubusercontent.com/raafarosa/Ebac-Semantix/main/utilities/Logos_colab.png)](https://github.com/raafarosa/Ebac_Data_Scientist_General)
+[![](https://raw.githubusercontent.com/raafarosa/Ebac-Semantix/main/utilities/Logos_colab.jpg)](https://github.com/raafarosa/Ebac_Data_Scientist_General)
 ---
 
 # Ebac X Semantix Project
