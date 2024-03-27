@@ -380,19 +380,6 @@ def main():
 
 
     st.markdown(''' 
-                ### Distribuição percentual com tabela cruzada para 3 grupos
-                <a name="crosstab3perc"></a>
-                ''', unsafe_allow_html=True)
-    with st.echo():
-        ""
-        # Criar e exibir uma tabela cruzada normalizada por linha para as variáveis 'VisitorType', 'grupo_3' e 'year'
-        st.table(pd.crosstab(index=df.VisitorType, 
-                             columns=[df.grupo_3, df.year], 
-                             normalize='index'
-                             ).applymap(lambda x: f'{x*100:.0f} %'))
-
-
-    st.markdown(''' 
                 ### Tabela cruzada percentual com renomeação dos 3 grupos
                 <a name="crosstab3rename"></a>
                 ''', unsafe_allow_html=True)
@@ -423,36 +410,6 @@ def main():
 
 
     st.markdown(''' 
-                ### Distribuição percentual com tabela cruzada para 4 grupos
-                <a name="crosstab4perc"></a>
-                ''', unsafe_allow_html=True)
-    with st.echo():
-        ""
-        # Criar e exibir uma tabela cruzada normalizada por coluna para as variáveis 'Month', 'grupo_4' e 'year'
-        st.table(pd.crosstab(index=df.Month, 
-                             columns=[df.grupo_4, df.year], 
-                             normalize='columns'
-                             ).applymap(lambda x: f'{x*100:.2f} %'))
-
-
-    st.markdown(''' 
-                ### Tabela cruzada percentual com renomeação dos 4 grupos
-                <a name="crosstab4rename"></a>
-                ''', unsafe_allow_html=True)
-    with st.echo():
-        ""
-        # Criar e exibir uma tabela cruzada normalizada por linha para as variáveis 'year', 'VisitorType', 'SpecialDay' e 'grupo_4', com renomeação dos grupos
-        st.markdown(pd.crosstab(index=[df.year, df.VisitorType, df.SpecialDay], 
-                                columns=df.grupo_4, 
-                                normalize='index'
-                                ).applymap(lambda x: f'{x*100:.2f} %').rename(columns={1: '1 (Returning_Visitor - SpecialDay 0)', 
-                                                                                       2: '2 (Returning_Visitor - SpecialDay 1)', 
-                                                                                       3: '3 (New_Visitor)', 
-                                                                                       4: '4 (Other)'
-                                                                                       }).reset_index().style.hide(axis='index').to_html(), unsafe_allow_html=True)
-
-
-    st.markdown(''' 
                 <br>
 
                 ### Pair Plot final
@@ -460,8 +417,8 @@ def main():
                 ''', unsafe_allow_html=True)
     with st.echo():
         ""
-        # Criar um pair plot para visualizar as relações entre as variáveis 'BounceRates', 'year', 'SpecialDay', 'grupo_3' e 'grupo_4', colorindo pelo valor da variável 'year'
-        sns.pairplot(data=df[['BounceRates', 'year', 'SpecialDay', 'grupo_3', 'grupo_4']], 
+        # Criar um pair plot para visualizar as relações entre as variáveis "year","month","state","latitude","longitude","firespots", colorindo pelo valor da variável 'year'
+        sns.pairplot(data=df[['year', 'month', 'state', 'latitude', 'longitude', 'firespots']], 
                      hue='year')
 
         # Exibir o pair plot
