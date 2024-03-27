@@ -128,34 +128,13 @@ def main():
 
                 # Agrupamento hierárquico
 
-                Neste projeto foi utilizada a base [online shoppers purchase intention](https://archive.ics.uci.edu/ml/datasets/Online+Shoppers+Purchasing+Intention+Dataset) de Sakar, C.O., Polat, S.O., Katircioglu, M. et al. Neural Comput & Applic (2018). [Web Link](https://doi.org/10.1007/s00521-018-3523-0).
+                Neste projeto foi utilizada a base [Brazilian Amazon Rainforest Degradation 1999-2019](https://www.kaggle.com/datasets/mbogernetto/brazilian-amazon-rainforest-degradation) de MARIANA BOGER NETTO.
 
-                A base trata de registros de 12.330 sessões de acesso a páginas, cada sessão sendo de um único usuário em um período de 12 meses, para posteriormente relacionar o design da página e o perfil do cliente.
-                
-                ***"Será que clientes com comportamento de navegação diferentes possuem propensão a compra diferente?"***
+                A Floresta Amazônica é uma floresta tropical úmida de folhas largas no bioma Amazônia que cobre territórios pertencentes a nove nações. A maior parte da floresta está contida dentro do Brasil, com 60% da floresta tropical, seguido pelo Peru com 13%, Colômbia com 10%, e com quantidades menores na Venezuela, Equador, Bolívia, Guiana, Suriname e Guiana Francesa.
 
-                O objetivo é agrupar as sessões de acesso ao portal considerando o comportamento de acesso e informações da data, como a proximidade a uma data especial, fim de semana e o mês.
+                A região fornece benefícios importantes para comunidades que vivem perto e longe. Quase 500 comunidades indígenas chamam a Floresta Amazônica de lar. É um ecossistema altamente biodiverso, lar de inúmeras espécies de plantas e animais. A floresta tropical pode criar seu próprio clima e influenciar os climas ao redor do mundo. Infelizmente, o ecossistema frágil enfrenta a constante ameaça de desmatamento e incêndios (por causas naturais ou antropogênicas).
 
-                |Variável                |Descrição                                                                                                                      |Atributo   | 
-                | :--------------------- |:----------------------------------------------------------------------------------------------------------------------------  | --------: | 
-                |Administrative          | Quantidade de acessos em páginas administrativas                                                                              |Numérico   | 
-                |Administrative_Duration | Tempo de acesso em páginas administrativas                                                                                    |Numérico   | 
-                |Informational           | Quantidade de acessos em páginas informativas                                                                                 |Numérico   | 
-                |Informational_Duration  | Tempo de acesso em páginas informativas                                                                                       |Numérico   | 
-                |ProductRelated          | Quantidade de acessos em páginas de produtos                                                                                  |Numérico   | 
-                |ProductRelated_Duration | Tempo de acesso em páginas de produtos                                                                                        |Numérico   | 
-                |BounceRates             | *Percentual de visitantes que entram no site e saem sem acionar outros *requests* durante a sessão                            |Numérico   | 
-                |ExitRates               | * Soma de vezes que a página é visualizada por último em uma sessão dividido pelo total de visualizações                      |Numérico   | 
-                |PageValues              | * Representa o valor médio de uma página da Web que um usuário visitou antes de concluir uma transação de comércio eletrônico |Numérico   | 
-                |SpecialDay              | Indica a proximidade a uma data festiva (dia das mães etc)                                                                    |Numérico   | 
-                |Month                   | Mês                                                                                                                           |Categórico | 
-                |OperatingSystems        | Sistema operacional do visitante                                                                                              |Categórico | 
-                |Browser                 | Browser do visitante                                                                                                          |Categórico | 
-                |Region                  | Região                                                                                                                        |Categórico | 
-                |TrafficType             | Tipo de tráfego                                                                                                               |Categórico | 
-                |VisitorType             | Tipo de visitante: novo ou recorrente                                                                                         |Categórico | 
-                |Weekend                 | Indica final de semana                                                                                                        |Categórico | 
-                |Revenue                 | Indica se houve compra ou não                                                                                                 |Categórico |
+                O desmatamento ocorre por muitas razões, como agricultura ilegal, desastres naturais, urbanização e mineração. Existem várias maneiras de remover florestas - queimar e cortar árvores são dois métodos. Embora o desmatamento esteja ocorrendo em todo o mundo hoje, é um problema especialmente crítico nas florestas tropicais da Amazônia, como a única grande floresta ainda de pé no mundo. Lá, as espécies de plantas e animais que abrigam têm desaparecido em uma taxa alarmante.
 
                 *Variáveis calculadas pelo Google Analytics*
 
