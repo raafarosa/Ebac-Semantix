@@ -103,7 +103,7 @@ def main():
 
     st.markdown('''
                 <div style="text-align:center">
-                    <img src="https://raw.githubusercontent.com/raafarosa/Ebac_Data_Scientist_General/main/utilities/newebac_logo_black_half.png" alt="ebac_logo-data_science" width="100%">
+                    <img src="https://raw.githubusercontent.com/raafarosa/Ebac-Semantix/main/utilities/Semantix_logo.png" alt="ebac_logo-data_science" width="100%">
                 </div>
 
                 ---
