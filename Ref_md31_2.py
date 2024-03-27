@@ -128,15 +128,13 @@ def main():
 
                 # Agrupamento hierárquico
 
-                Neste projeto foi utilizada a base [Brazilian Amazon Rainforest Degradation 1999-2019](https://www.kaggle.com/datasets/mbogernetto/brazilian-amazon-rainforest-degradation) de MARIANA BOGER NETTO.
+                Neste projeto foi utilizada a base Brazilian Amazon Rainforest Degradation 1999-2019. Antes das análises, vamos a um contexto rápido sobre o assunto!
 
                 A Floresta Amazônica é uma floresta tropical úmida de folhas largas no bioma Amazônia que cobre territórios pertencentes a nove nações. A maior parte da floresta está contida dentro do Brasil, com 60% da floresta tropical, seguido pelo Peru com 13%, Colômbia com 10%, e com quantidades menores na Venezuela, Equador, Bolívia, Guiana, Suriname e Guiana Francesa.
 
                 A região fornece benefícios importantes para comunidades que vivem perto e longe. Quase 500 comunidades indígenas chamam a Floresta Amazônica de lar. É um ecossistema altamente biodiverso, lar de inúmeras espécies de plantas e animais. A floresta tropical pode criar seu próprio clima e influenciar os climas ao redor do mundo. Infelizmente, o ecossistema frágil enfrenta a constante ameaça de desmatamento e incêndios (por causas naturais ou antropogênicas).
 
                 O desmatamento ocorre por muitas razões, como agricultura ilegal, desastres naturais, urbanização e mineração. Existem várias maneiras de remover florestas - queimar e cortar árvores são dois métodos. Embora o desmatamento esteja ocorrendo em todo o mundo hoje, é um problema especialmente crítico nas florestas tropicais da Amazônia, como a única grande floresta ainda de pé no mundo. Lá, as espécies de plantas e animais que abrigam têm desaparecido em uma taxa alarmante.
-
-                *Variáveis calculadas pelo Google Analytics*
 
                 ''', unsafe_allow_html=True)
 
