@@ -64,7 +64,7 @@ def dn(color_threshold: float, num_groups: int, Z: list) -> None:
 def main():
     # Configuração inicial da página da aplicação
     st.set_page_config(
-        page_title="EBAC | Module 31 | Practice 2",
+        page_title="EBAC X SEMANTIX",
         page_icon='https://raw.githubusercontent.com/raafarosa/Ebac_Data_Scientist_General/main/utilities/regular_ebac-logo.ico', 
         layout="wide",
         initial_sidebar_state="expanded",
