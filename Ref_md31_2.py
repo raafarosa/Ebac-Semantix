@@ -10,7 +10,7 @@ from gower                   import gower_matrix
 
 from scipy.spatial.distance  import squareform
 from scipy.cluster.hierarchy import linkage
-from scipy.cluster.hierarchy import dendrogram
+from scipy.cluster.hierarchy import dendrogramcmc
 from scipy.cluster.hierarchy import fcluster
 
 
