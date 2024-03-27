@@ -269,7 +269,7 @@ def main():
     with st.echo():
         ""
         # Lista de variáveis numéricas
-        numerical = ['ProductRelated', 'PageValues', 'SpecialDay']
+        numerical = ['year', 'month', 'state']
 
         # Selecionar as variáveis relacionadas ao padrão de navegação e à característica da data
         df_ = df[session_navigation_pattern + temporal_indicators]
@@ -289,7 +289,7 @@ def main():
 
 
     st.markdown(''' 
-                ## Processamento de Variáveis Dummy: Identificação categórica e análise dos tipos de dados
+                ### Processamento de Variáveis Dummy: Identificação categórica e análise dos tipos de dados
                 <a name="dummy"></a>
                 ''', unsafe_allow_html=True)
     with st.echo():
@@ -298,7 +298,7 @@ def main():
         df_dummies = pd.get_dummies(data=df_, drop_first=False)
 
         # Obter as colunas que representam as variáveis categóricas
-        categorical_features = df_dummies.drop(columns=numerical).columns.values
+        categorical_features = df_dummies.select_dtypes(include='object').columns.tolist()
 
         # Criar uma lista de valores booleanos indicando se cada coluna é categórica
         cat_features = [True if column in categorical_features else False for column in df_dummies]
@@ -471,7 +471,7 @@ def main():
     st.markdown('''
                 ## Conclusão
 
-                Ao analisar os resultados do agrupamento hierárquico, destaca-se a importância da abordagem focada nas categorias de tipos de visitantes. Em particular, ao dividir os visitantes em três categorias, o grupo "1 (Returning_Visitor)", composto por visitantes recorrentes, se destaca ao exibir a maior inclinação para efetuar compras. Esta conclusão é corroborada pela análise das relações entre as variáveis de navegação e as características temporais, resultando na identificação de categorias distintas para os visitantes. Este insight oferece uma perspectiva valiosa sobre o comportamento dos visitantes, possibilitando a implementação de estratégias direcionadas para diferentes segmentos. Desta forma, torna-se viável otimizar tanto a experiência do usuário quanto a efetividade das estratégias de marketing.
+                O destamamento da Amazônia é uma preocupação global urgente, impulsionada pela expansão da agricultura, mineração e infraestrutura. Isso resulta na perda de habitat, ameaça à biodiversidade e contribui significativamente para as mudanças climáticas. Combater o desmatamento ilegal, promover práticas sustentáveis e fortalecer a aplicação da lei são essenciais para proteger esse ecossistema vital e garantir um futuro sustentável.
                 
                 ---
                 <a name="final"></a>
