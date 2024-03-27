@@ -1,4 +1,4 @@
-[![](https://raw.githubusercontent.com/raafarosa/Ebac_Data_Scientist_General/main/utilities/newebac_logo_black_half.png)](https://github.com/raafarosa/Ebac_Data_Scientist_General)
+[![](https://raw.githubusercontent.com/raafarosa/Ebac-Semantix/main/utilities/Logos_colab.png)](https://github.com/raafarosa/Ebac_Data_Scientist_General)
 ---
 
 # Ebac X Semantix Project
@@ -8,7 +8,7 @@
 ---
 
 #### **Descrição:**
-Segmentação de clientes utilizando o RFV (Recência, Frequência e Valor)
+Projeto de analise de dados relacionado ao desmatamento da amazônia.
 
 ## Link para a aplicação:
 
