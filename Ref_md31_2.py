@@ -151,8 +151,8 @@ def main():
                 ''', unsafe_allow_html=True)
     with st.echo():
         ""
-        # Ler o arquivo CSV e armazenar os dados em um DataFrame chamado df
-        df = pd.read_csv('https://raw.githubusercontent.com/raafarosa/Ebac-Semantix/main/supply_chain_data.csv')
+        # Leitura do arquivo CSV e armazenar os dados em um DataFrame chamado df
+        df = pd.read_csv('https://raw.githubusercontent.com/raafarosa/Ebac-Semantix/main/Data/inpe_brazilian_amazon_fires_1999_2019.csv')
 
         # Exibir o DataFrame df, mostrando os dados carregados do arquivo CSV
         st.dataframe(df)
