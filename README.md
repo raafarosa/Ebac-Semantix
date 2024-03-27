@@ -24,8 +24,4 @@ PLACEHOLER TO VIDEO
 
   > [![Jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?&logo=Jupyter&logoColor=white)](https://github.com/raafarosa/Ebac-Semantix/blob/main/ebac-x-semantix-project.ipynb) <br>
 > [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/raafarosa/ebac-x-semantix-project)<br>
-> [![GitHub](https://img.shields.io/github/directory-file-count/raafarosa/Ebac_Data_Scientist_General/Module_19_-_Streamlit2%2FPractice_1?type=dir&style=flat-square&logo=Github)](https://github.com/raafarosa/Ebac-Semantix/blob/main/ebac-x-semantix-project.ipynb)<br>
-
-
-
 ---
