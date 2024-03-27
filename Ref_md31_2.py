@@ -159,23 +159,23 @@ def main():
 
 
     st.markdown(''' 
-                ### Visualização da contagem de valores na coluna 'Revenue'
+                ### Visualização da contagem de valores na coluna 'year'
                 <a name="value_counts"></a>
                 ''', unsafe_allow_html=True)
     with st.echo():
         ""
-        # Exibir a contagem de valores na coluna 'Revenue'
-        st.text(df.Revenue.value_counts())
+        # Exibir a contagem de valores na coluna 'year'
+        st.text(df.year.value_counts())
 
 
     st.markdown(''' 
-                ### Representação gráfica da contagem de 'Revenue' 
+                ### Representação gráfica da contagem de 'year' 
                 <a name="countplot"></a>
                 ''', unsafe_allow_html=True)
     with st.echo():
         ""
-        # Criar um gráfico de contagem (count plot) para a coluna 'Revenue' usando seaborn
-        sns.countplot(x='Revenue', data=df)
+        # Criar um gráfico de contagem (count plot) para a coluna 'year' usando seaborn
+        sns.countplot(x='year', data=df)
 
         # Exibir o gráfico
         st.pyplot(plt)
@@ -263,7 +263,7 @@ def main():
     with st.echo():
         ""
         # Lista de variáveis que indicam a característica da data
-        temporal_indicators = ['SpecialDay', 'Month', 'Weekend']
+        temporal_indicators = ['month', 'state', 'firespots']
 
         # Obter os tipos de dados das variáveis relacionadas à característica da data, criar um DataFrame e renomear as colunas
         st.dataframe(df[temporal_indicators].dtypes.reset_index().rename(columns={'index': 'Variável (temporal_indicators)', 
@@ -393,9 +393,9 @@ def main():
                 ''', unsafe_allow_html=True)
     with st.echo():
         ""
-        # Criar e exibir uma tabela cruzada normalizada por linha para as variáveis 'VisitorType', 'grupo_3' e 'Revenue'
+        # Criar e exibir uma tabela cruzada normalizada por linha para as variáveis 'VisitorType', 'grupo_3' e 'year'
         st.table(pd.crosstab(index=df.VisitorType, 
-                             columns=[df.grupo_3, df.Revenue], 
+                             columns=[df.grupo_3, df.year], 
                              normalize='index'
                              ).applymap(lambda x: f'{x*100:.0f} %'))
 
@@ -406,8 +406,8 @@ def main():
                 ''', unsafe_allow_html=True)
     with st.echo():
         ""
-        # Criar e exibir uma tabela cruzada normalizada por linha para as variáveis 'Revenue' e 'grupo_3', com renomeação dos grupos
-        st.table(pd.crosstab(index=df.Revenue, 
+        # Criar e exibir uma tabela cruzada normalizada por linha para as variáveis 'year' e 'grupo_3', com renomeação dos grupos
+        st.table(pd.crosstab(index=df.year, 
                              columns=df.grupo_3, 
                              normalize='index'
                              ).applymap(lambda x: f'{x*100:.2f} %').rename(columns={1: '1 (Returning_Visitor)', 
@@ -436,9 +436,9 @@ def main():
                 ''', unsafe_allow_html=True)
     with st.echo():
         ""
-        # Criar e exibir uma tabela cruzada normalizada por coluna para as variáveis 'Month', 'grupo_4' e 'Revenue'
+        # Criar e exibir uma tabela cruzada normalizada por coluna para as variáveis 'Month', 'grupo_4' e 'year'
         st.table(pd.crosstab(index=df.Month, 
-                             columns=[df.grupo_4, df.Revenue], 
+                             columns=[df.grupo_4, df.year], 
                              normalize='columns'
                              ).applymap(lambda x: f'{x*100:.2f} %'))
 
@@ -449,8 +449,8 @@ def main():
                 ''', unsafe_allow_html=True)
     with st.echo():
         ""
-        # Criar e exibir uma tabela cruzada normalizada por linha para as variáveis 'Revenue', 'VisitorType', 'SpecialDay' e 'grupo_4', com renomeação dos grupos
-        st.markdown(pd.crosstab(index=[df.Revenue, df.VisitorType, df.SpecialDay], 
+        # Criar e exibir uma tabela cruzada normalizada por linha para as variáveis 'year', 'VisitorType', 'SpecialDay' e 'grupo_4', com renomeação dos grupos
+        st.markdown(pd.crosstab(index=[df.year, df.VisitorType, df.SpecialDay], 
                                 columns=df.grupo_4, 
                                 normalize='index'
                                 ).applymap(lambda x: f'{x*100:.2f} %').rename(columns={1: '1 (Returning_Visitor - SpecialDay 0)', 
@@ -468,9 +468,9 @@ def main():
                 ''', unsafe_allow_html=True)
     with st.echo():
         ""
-        # Criar um pair plot para visualizar as relações entre as variáveis 'BounceRates', 'Revenue', 'SpecialDay', 'grupo_3' e 'grupo_4', colorindo pelo valor da variável 'Revenue'
-        sns.pairplot(data=df[['BounceRates', 'Revenue', 'SpecialDay', 'grupo_3', 'grupo_4']], 
-                     hue='Revenue')
+        # Criar um pair plot para visualizar as relações entre as variáveis 'BounceRates', 'year', 'SpecialDay', 'grupo_3' e 'grupo_4', colorindo pelo valor da variável 'year'
+        sns.pairplot(data=df[['BounceRates', 'year', 'SpecialDay', 'grupo_3', 'grupo_4']], 
+                     hue='year')
 
         # Exibir o pair plot
         st.pyplot(plt)
