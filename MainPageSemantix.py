@@ -109,7 +109,7 @@ def main():
                 ---
 
                 <!-- # **Profissão: Cientista de Dados** -->
-                ### **Module 31** | Streamlit V (Practice 2)
+                ### **Brazilian Amazon Rainforest Degradation 1999-2019**
 
                 **Por:** [Rafael Rosa](https://www.linkedin.com/in/rafael-rosa-alves/)<br>
 
