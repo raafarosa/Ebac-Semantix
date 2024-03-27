@@ -16,7 +16,6 @@ ___
 > [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=Streamlit&logoColor=white)](https://ebac-x-semantix-project.streamlit.app/) <br>
 > [![GitHub](https://img.shields.io/github/directory-file-count/raafarosa/Ebac_Data_Scientist_General/Module_19_-_Streamlit2%2FPractice_1?type=dir&style=flat-square&logo=Github)](https://github.com/raafarosa/Ebac-Semantix/blob/main/MainPageSemantix.py)
 
-PLACEHOLER TO VIDEO
 ---
 
 ### Jupyter Notebook
