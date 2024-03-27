@@ -73,7 +73,7 @@ def main():
 
     st.sidebar.markdown('''
                         # **Profissão: Cientista de Dados**
-                        ### **Projeto de Agrupamento Hierárquico**
+                        ### **Brazilian Amazon Rainforest Degradation 1999-2019**
 
                         **Por:** [Rafael Rosa](https://www.linkedin.com/in/rafael-rosa-alves/)<br>
                         
@@ -100,12 +100,6 @@ def main():
                 ''', language='python')
 
         
-
-    st.sidebar.markdown('''
-                        ---
-                        *Baseado no [Exercício 2](https://github.com/raafarosa/Ebac_Data_Scientist_General/tree/main/Module%2030%20-%20Hier%C3%A1rquicos%20aglomerativos/Practice%202) do [Módulo 30](https://github.com/raafarosa/Ebac_Data_Scientist_General/tree/main/Module%2030%20-%20Hier%C3%A1rquicos%20aglomerativos).*
-                        ''')
-
 
     st.markdown('''
                 <div style="text-align:center">
@@ -237,20 +231,18 @@ def main():
     
 
     st.markdown(''' 
-                ### Seleção e análise das variáveis que descrevem o padrão de navegação na sessão
+                ### Dados que descrevem quantitativos para o desmatamento.
                 <a name="session_navigation_pattern"></a>
                 ''', unsafe_allow_html=True)
     with st.echo():
         ""
         # Lista de variáveis que descrevem o padrão de navegação na sessão
-        session_navigation_pattern = ['Administrative', 
-                                      'Informational', 
-                                      'ProductRelated', 
-                                      'PageValues', 
-                                      'OperatingSystems', 
-                                      'Browser', 
-                                      'TrafficType', 
-                                      'VisitorType']
+        session_navigation_pattern = ['year', 
+                                      'month', 
+                                      'state', 
+                                      'latitude', 
+                                      'longitude', 
+                                      'firespots', ]
 
         # Obter os tipos de dados das variáveis relacionadas ao padrão de navegação na sessão, criar um DataFrame e renomear as colunas
         st.dataframe(df[session_navigation_pattern].dtypes.reset_index().rename(columns={'index': 'Variável (session_navigation_pattern)', 
